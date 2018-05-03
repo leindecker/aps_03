@@ -14,7 +14,7 @@ No XAMPP o usuário deve iniciar o serviço do Apache e Mysql
 
 # URI's
 
-baseURI = http://localhost:8080/Concessionaria/ws/
+baseURI = http://localhost:8080/Concessionaria/ws
 
 ## Clientes
 
@@ -49,3 +49,61 @@ baseURI = http://localhost:8080/Concessionaria/ws/
 ### [DELETE] - Deletar cliente por ID
 		URI: /clientes/excluirCliente/{id}                 
 
+## Funcionarios
+
+### GET - Listar todos os Funcionarios
+         URI: /funcionarios/listarFuncionarios
+
+### GET - Listar Funcionarios por ID
+         URI: funcionarios/getFuncionario/{id}
+		 
+### [POST] - Cadastrar Clientes
+         URI: /funcionarios/cadastrarFuncionario
+         
+       {
+            "nome": "Guilherme",
+            "setor": "Vendas"
+        }	
+
+### [PUT] - Alterar Funcionarios
+	     URI: /funcionarios/alterarFuncionario
+	 
+	    {
+		   	"id": 1,
+	        "nome": "Bruna",
+	        "setor": "pos venda"
+        }	
+
+### [DELETE] - Deletar funcionarios por ID
+		URI: /funcionarios/excluirFuncionario/{id} 	
+
+## Automoveis
+
+### GET - Listar todos os Automoveis
+         URI: /automoveis/listarAutomoveis
+         
+### GET - Listar Automoveis por ID
+         URI: /automoveis/getAutomovel/{id}
+         
+### [POST] - Cadastrar Automoveis
+         URI: /automoveis/cadastrarAutomovel
+         
+       {
+            "modelo": "Civic",
+            "cor": "Preta",
+            "placa": "IPI8993"
+        }
+
+### [PUT] - Alterar Automoveis
+	     URI: /automoveis/alterarAutomovel
+	 
+	    {
+		   	"id": 1,
+	        "modelo": "CRV",
+	        "cor": "branca",
+	        "placa": "iqm7643"
+        }
+
+
+### [DELETE] - Deletar automoveis por ID
+		URI: /automoveis/excluirAutomovel/{id}  		
